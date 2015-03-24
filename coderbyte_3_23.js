@@ -38,3 +38,17 @@ function TimeConvert(num) {
     return Math.floor(hour)+":"+minute
 
 }
+
+
+/// Take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space.
+function LetterCapitalize(str) {
+ var words = str.split(" ");
+ console.log(words);
+ var new_string = "";
+ for (i in words) {
+  new_word = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  new_string = new_string + " " + new_word;
+ }
+ return new_string.trim();
+
+}
